@@ -1,179 +1,85 @@
-<img width="450" height="450" alt="bubbl_assembled" src="https://github.com/user-attachments/assets/760c4679-654a-4ba0-b6cc-c4b3d01c640f" />
+<img width="463" height="286" alt="image" src="https://github.com/user-attachments/assets/110cd321-0ad9-45a0-8d74-5e02288eb51d" />
 
-# bubbl- A tamagotchi-inspired desk pet to keep friendships alive.
 
-A friendship-powered Tamagotchi-inspired pet for your desk, which looks like a Japanese onigiri, keeps friend groups alive by maintaining a common pet and sending nudges to each other, just to keep the drifting friend group a little closer! 
+# Yuan Converter 6000- A handheld currency converter
 
-## How does it work?
-There is one shared pet for everyone. Every bubbl device in the same group (friend group) has the same pet, you can feed the pet, make it rest, and play with it. If no one in the friend group interacts with the pet, the pet's stats decay, causing harm to it :(, which incentivises the friend group to keep interacting with the pet. In the process, friends can send each other nudges, which are sound notifcations which also vibrate the device; this is useful when. This adds a fun component to the already interesting and interactive interconnected pet system. 
+A handheld currency converter (made with left-handed people in mind :) ), that converts currency on the spot, it features a Colour TFT Circular display with an iPod-like rotary encoder. Also displays your WeChat QR Code!
 
 ## Why did I make it?
-In the current day and age, where friendships are basically just sending each other reels, friendships are dying fast. There is no real connection, and bubbl I hope helps solve that issue by having a pet to take care of; it makes sure all the members of the friend group have equal responsibility and are constantly reminded of each other, thus hopefully reducing friction in friendships.
+I don't like the concept of currency converters on your phone! So I decided to make a handheld offline converter that also shows my WeChat QR Code
  
 ## Components Required for the Build
 I have listed everything in the project; you can find the same in the BOM
 
-| No.   | Quantity | Comment                        | Footprint         | Link                                                                                                       | Price | Total (USD) |
-| ----- | -------- | ------------------------------ | ----------------- | ---------------------------------------------------------------------------------------------------------- | ----- | ----------- |
-| 1     | 1        | XIAO-ESP32-S3-SMD              | XIAO-ESP32-S3-SMD | https://www.aliexpress.com/item/1005006987905528.html                                                      | 6.77  | 6.77        |
-| 2     | 2        | 10uF                           | C0603             | https://jlcpcb.com/partdetail/HRE-CGA0805X5R106K500MT/C6119889                                             | 0.01  | 0.02        |
-| 3     | 2        | 100nF                          | C0603             | https://jlcpcb.com/partdetail/39123-0805B104K500NT/C38141                                                  | 0.01  | 0.02        |
-| 4     | 1        | MAX98357A                      | \-                | https://www.aliexpress.com/item/1005007003802663.html                                                      | 0.65  | 0.65        |
-| 5     | 1        | INMP441                        | \-                | https://www.aliexpress.com/item/1005008870682636.html                                                      | 0.75  | 0.75        |
-| 6     | 1        | 1.3" OLED                      | \-                | https://www.aliexpress.com/item/1005008365029314.html                                                      | 2.03  | 2.03        |
-| 7     | 1        | Analog Joystick Module         | \-                | https://www.aliexpress.com/item/1005012147405483.html                                                      | 1.92  | 1.92        |
-| 8     | 1        |  Vibration Motor Module        | \-                | https://www.aliexpress.com/item/33009331080.html                                                           | 0.49  | 0.49        |
-| 9     | 10       | M2 X 3mm Phillips Round head   | \-                | https://onlyscrews.in/products/m2-x-5mm-phillips-round-head-laptop-screw                                   | 0.04  | 0.4         |
-| 10    | 5        | M1.4 X 2mm Phillips Round head | \-                | https://onlyscrews.in/products/m1-4-x-2mm-phillips-round-head-laptop-and-mobile-screw-dia-1-4mm-length-2mm | 0.023 | 0.115       |
-| 11    | 6        | M2 X 10mm Hard Dowel Pins      | \-                | https://onlyscrews.in/products/m2-x-10mm-hard-dowel-pins-dia-2mm-length-10mm                               | 0.051 | 0.306       |
-| 12    | 1        | 400mAh LiPo                    | \-                | https://robu.in/product/400mah-pcm-protected-micro-li-po-battery-2/                                        | 2.86  | 2.86        |
-| 13    | 5        | 2 Layer PCB                    | \-                | https://cart.jlcpcb.com/quote?spm=jlcpcb.Public.2006                                                       | 2.1   | 2.1         |
-| Total |          |                                |                   |                                                                                                            |       | 18.431 USD  |
-
+| No.   | Quantity | Comment                                             | Footprint                                                                  | Link                                                                                                                                                       | Price | Total Cost(USD) |
+| ----- | -------- | --------------------------------------------------- | -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | --------------- |
+| 1     | 1        | 2.4GHz                                              | BULETM-SMD_ESP32-S3-MINI-1-N8                                              | https://www.electropi.in/espressif-esp32-s3-mini-1-n8-module                                                                                               | 4.05  | 4.05            |
+| 2     | 1        | Adafruit ANO Rotary Navigation Encoder Breakout PCB | Adafruit ANO 6311 Rotary Navigation Encoder Breakout with Soldered Control | https://www.adafruit.com/product/6311                                                                                                                      | 10.95 | 10.95           |
+| 3     | 1        | AP2112K-3.3TRG1                                     | SOT-23-5_L2.9-W1.6-P0.95-LS2.8-BR                                          | https://robu.in/product/ap2202k-3-3trg1-diodes-inc-ldo-fixed-3-3v-0-15a-40-to-125deg-c/                                                                    | 0.14  | 0.14            |
+| 4     | 1        | B2B-XH-A(LF)(SN)                                    | CONN-TH_B2B-XH-A-LF-SN                                                     | https://robu.in/product/b2b-xh-alfsn-jst-1x2p-2p-xh-tin-2-25%E2%84%8385%E2%84%83-3a-1-2-5mm-brass-direct-insert-pluginp2-5mm-wire-to-board-connector-rohs/ | 0.049 | 0.049           |
+| 5     | 1        | GC9A01 Round Display                                | GC9A01_1.28_240x240-Slim                                                   | https://robu.in/product/goldenmorning-gc9a01-7p-240x240-spi-1-28-inch-round-display-module                                                                 | 5.16  | 5.16            |
+| 6     | 1        | TP4056                                              | ESOP-8_L4.9-W3.9-P1.27-LS6.0-BL-EP-4                                       | https://robu.in/product/1-month-warranty-1253/                                                                                                             | 0.14  | 0.14            |
+| 7     | 1        | TYPE-C 16PIN 2MD(073)                               | USB-C-SMD_TYPE-C-16PIN-2MD-073                                             | https://www.ktron.in/product/16-pin-usb-type-c-connector-smd                                                                                               | 0.049 | 0.049           |
+| 8     | 2        | 5.1k?                                               | RES-TH_BD2.3-L6.5-P10.50-D0.5                                              | https://jlcpcb.com/partdetail/VO-MF1_4W_1K_1_ST52/C2903245                                                                                                 | 0.01  | 0.02            |
+| 9     | 2        | 10k?                                                | R0402                                                                      | https://jlcpcb.com/partdetail/HKR_Hong_Kong_Resistors-RCT0510KFLF/C702829                                                                                  | 0.01  | 0.02            |
+| 10    | 2        | LED_0402-R                                          | LED0402-RD_YELLOW                                                          | https://robu.in/product/0402-surface-mount-led-red-50pcs/                                                                                                  | 0.01  | 0.02            |
+| 11    | 3        | 1k?                                                 | R0603                                                                      | https://jlcpcb.com/parts/componentSearch?searchTxt=PTFR0603B1K00N9                                                                                         | 0.02  | 0.06            |
+| 12    | 3        | 10uF                                                | C0603                                                                      | https://jlcpcb.com/partdetail/FOJAN-FCC0603X106K100CT/C5137565                                                                                             | 0.05  | 0.15            |
+| 13    | 3        | 100nF                                               | C0603                                                                      | https://jlcpcb.com/partdetail/1943-CL10B104KB8NNNC/C1591                                                                                                   | 0.05  | 0.15            |
+| 14    | 3        | TS-1088-AR02016                                     | SW-SMD_L3.9-W3.0-P4.45                                                     | https://jlcpcb.com/partdetail/XUNPU-TS_1088AR02016/C720477                                                                                                 | 0.06  | 0.18            |
+| 15    | 6        | M1.4x 6mm Phillips head screw                       | \-                                                                         | https://onlyscrews.in/products/m1-4-x-6mm-phillips-round-head-laptop-and-mobile-screw-dia-1-4mm-length-6mm                                                 | 0.05  | 0.3             |
+| 16    | 6        | M1.2x 3mm Phillips head screw                       | \-                                                                         | https://onlyscrews.in/products/m1-2-x-3mm-phillips-round-head-laptop-screw-dia-1-2mm-length-3mm                                                            | 0.05  | 0.3             |
+| 17    | 5        | PCB                                                 | \-                                                                         | https://cart.jlcpcb.com/quote                                                                                                                              | 7     | 7               |
+| Total |          |                                                     |                                                                            |                                                                                                                                                            |       | 28.738 USD      |
 
 
 ## PCB and Schematic
 I designed it in EasyEDA. You can find the Gerber files in the repo. The schematic is:
 
-<img width="914" height="465" alt="schematic" src="https://github.com/user-attachments/assets/6e1c4cc6-730e-4b70-8799-2ce11445bd60" />
+<img width="764" height="329" alt="image" src="https://github.com/user-attachments/assets/bb1c616f-7533-46ef-b747-939c7186fe08" />
 
 
-And the PCB is a 2-layer PCB with a ground plane as layer 2:
 
-<img width="417" height="568" alt="pcb" src="https://github.com/user-attachments/assets/c04a72d8-f784-4000-b0a9-d6835a9dc2b6" />
+And the PCB is a 4-layer PCB:
+
+<img width="1027" height="489" alt="image" src="https://github.com/user-attachments/assets/98eafb37-c526-47ea-a1bb-c2b7a000e1bc" />
+
 
 
 3D Render of the PCB:
 
-<img width="540" height="741" alt="pcb_3d" src="https://github.com/user-attachments/assets/56dab36e-8f00-48ec-be77-da117c3318d2" />
-
-
-Wiring diagram:
-
-<img width="1269" height="767" alt="wiring_diagram" src="https://github.com/user-attachments/assets/46b482e5-5bc5-4173-a3d1-ceff13c312c4" />
-
+<img width="555" height="459" alt="image" src="https://github.com/user-attachments/assets/97492e1c-5766-490d-95a7-97fe62e12bb7" />
 
 
 ## Case
 Top and bottom view of the Case:
 
-<img width="702" height="347" alt="case_front_back" src="https://github.com/user-attachments/assets/86d234f9-9f33-4117-b6d8-ec81791c932f" />
-
-
+<img width="551" height="471" alt="image" src="https://github.com/user-attachments/assets/649b2e46-0262-4bf3-95b8-32e4835f0b29" />
 
 
 ## Assembly 
-Note: Please follow the wiring diagram :)
-1. Take the bottom case and install the PCB, and screw it into the bottom case using a M2 x 3 mm screw. Before screwing it, wire the BAT+ and BAT- from LiPO to the PCB.
 
-2. Screw in the Vibration motor after making the connections, as shown in the picture, using M2 x 3 mm
+1. Solder all the components onto the PCB. Using the pictures above as a reference, if you want, you can order a stencil and hot-air solder your MCU
+2. Put the LiPo into the bottom case and connect it to the JST on the bottom of the PCB
+3. Screw the PCB into the Case using an M1.2 x 3 mm Phillips head screw 
+4. Put on the Top case, aligning the Screen and Rotary Encoder
+5. Connect to the USB Port, and  press the switch in the middle of the Case, which turns it on
+6. Flash the firmware file onto the microcontroller
 
-   <img width="282.2" height="323.5" alt="assembly_1" src="https://github.com/user-attachments/assets/2e2f0d22-dfcc-4465-a6bd-f06eada222eb" />
- 
-3. Wire the Joystick Module to the PCB, then screw it in using M2 x 3 mm screws as shown in the picture.
-
-   <img width="310" height="235" alt="assembly_2" src="https://github.com/user-attachments/assets/0cbfe255-37e9-4d22-8f17-4f457c09ee6b" />
-
-5. Screw in the Speaker, with the diaphragm facing outward towards the speaker holes, using a M2 X 3 mm screw as shown in the picture.
- 
-   <img width="308" height="234" alt="assembly_3" src="https://github.com/user-attachments/assets/1128d4ed-6ca1-47fe-8aa3-4ca30eb71973" />
-
-6. Connect the amplifier to the microcontroller, then screw the amp into the case using  M1.4 x 2 mm screws as shown. Then connect the speaker to the amplifier.
-   
-   <img width="285" height="208" alt="assembly_4" src="https://github.com/user-attachments/assets/f320be90-6768-496d-8e1f-9a74ac440ee2" />
-   
-7. The bottom of the case should now look as shown below.
-   
-   <img width="320" height="241" alt="assembly_5" src="https://github.com/user-attachments/assets/29431dd5-5ce9-484f-9330-d087a30ad550" />
-
-8. Insert M2 x 10 mm hard metal dowel pins into the bottom case as shown below.
-   
-   <img width="268" height="228" alt="assembly_6" src="https://github.com/user-attachments/assets/c8960940-0ccb-4962-ae7e-a6ee0f30206a" />
-
-9. Now it's time to assemble the top case, screw in the OLED to the underside of the top case using M2 x 3 mm screws as shown and wire it to the microcontroller.
-
-   <img width="313" height="279" alt="assembly_7" src="https://github.com/user-attachments/assets/37cfa003-aea0-4b44-a69c-1dbc0a6fef15" />
-
-10. Install the INMP441 I2S Microphone with M1.4 x 2 mm screws into the case as shown and wire it to the microcontroller.
- 
-   <img width="283" height="204" alt="assembly_8" src="https://github.com/user-attachments/assets/91ab84ec-8c45-4bab-84e9-2c0283265543" />
-
-11. Lower the top case onto the bottom one, applying firm pressure equally from all sides to make sure the top locks in with the bottom using the dowel pins.
-12. Your own personal bubbl is now complete!
-
-## Setting it up
-Section I: Setting up Supabase:
-1. Go to https://supabase.com/ and create a new account
-2. Create a new project
-
-   <img width="182" height="152" alt="image" src="https://github.com/user-attachments/assets/e76cbfa2-75d0-4843-92f5-af39da6d6c31" />
-
-4. Go to the SQL Editor Tab and paste the content of the bubbl_supabase file in Firmware into the editor
-
-   <img width="356" height="218" alt="image" src="https://github.com/user-attachments/assets/2c5e036c-82f1-482c-9932-c57d885fc9d5" />
-
-5. Run the script, which will lead to the creation of the following tables: pet, users, events, and nudges
-6. In the SQL Editor, enter your friends' names in place of user1...4
-
-7. Go to your Supabase settings, then to API and copy your:
-   * Project URL
-   * Anom public key
-
-Section II: Setting up the firmware:
-
-7.  In the bubbl.ino file, replace the SSID and password fields with your credentials, enter the Supabase URL and Anon Key below, and set up your name.
-   * Note: All friends must use the same project
-   * Be listed in the users table
-   * Have a unique username
-
-8. Install the required libraries and upload the firmware to bubbl
-
-9. Wohooooo! You and your friend group now have a working bubbl of your own!
+Note: Setup your currency, conversion rate, QR code in the firmware :)
 
 
-## Files
-```text
-    └── bubbl/
-        ├── CAD_Files/
-        │   ├── bubbl_case.step
-        |   ├── bubbl.stl
-        │   ├── bubbl_assembled.f3z
-        │   └── bubbl_assembled.step
-        ├── PCB_Files/
-        │   ├── bubbl_gerber.zip
-        │   └── bubbl_source.epro2
-        ├── Firmware_Files/
-        │   ├── bubbl.ino
-        │   ├── bubbl_supabase.mdf
-        │   └── bubbl.wav
-        ├── bubbl_BOM.csv
-        ├── bubbl_Zine.pdf
-        └── README.md
-        └── Assets/
-        
-```
-## Future Additions
-In upcoming software versions, I will include support to send short voice notes to your buddies!
+
 
 ## Credits
 
-Abhinav [goat]
-
-The idea: https://github.com/TaniWanKenobi/tamagotchi
-
-Vibration motor module: https://grabcad.com/library/vibration-motors-1
-
-OLED module: https://grabcad.com/library/oled-display-1-3-2
-
-Amplifier: https://grabcad.com/library/max98357a-3w-i2s-amplifier-1
-
-Microphone: https://grabcad.com/library/inmp441-microphone-module-1
-
-Joystick: https://grabcad.com/library/dual-axis-xy-joystick-module-with-push-button-1
-
+the fallout huddle
 
 ## Zine
 
-<img width="1410" height="2000" alt="bubbl_zine" src="https://github.com/user-attachments/assets/03033711-a8e1-4723-8ae2-41cc92df9b25" />
+<img width="598" height="856" alt="image" src="https://github.com/user-attachments/assets/b00e91b8-bed5-4238-9df4-6835463c2161" />
+
+
+
 
 
