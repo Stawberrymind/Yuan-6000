@@ -1,0 +1,19 @@
+No.,Quantity,Comment,Footprint,Link,Price,Total Cost(USD)
+1,1,2.4GHz,BULETM-SMD_ESP32-S3-MINI-1-N8,https://www.electropi.in/espressif-esp32-s3-mini-1-n8-module,4.05,4.05
+2,1,Adafruit ANO Rotary Navigation Encoder Breakout PCB,Adafruit ANO 6311 Rotary Navigation Encoder Breakout with Soldered Control,https://www.adafruit.com/product/6311,10.95,10.95
+3,1,AP2112K-3.3TRG1,SOT-23-5_L2.9-W1.6-P0.95-LS2.8-BR,https://robu.in/product/ap2202k-3-3trg1-diodes-inc-ldo-fixed-3-3v-0-15a-40-to-125deg-c/,0.14,0.14
+4,1,B2B-XH-A(LF)(SN),CONN-TH_B2B-XH-A-LF-SN,https://robu.in/product/b2b-xh-alfsn-jst-1x2p-2p-xh-tin-2-25%E2%84%8385%E2%84%83-3a-1-2-5mm-brass-direct-insert-pluginp2-5mm-wire-to-board-connector-rohs/,0.049,0.049
+5,1,GC9A01 Round Display,GC9A01_1.28_240x240-Slim,https://robu.in/product/goldenmorning-gc9a01-7p-240x240-spi-1-28-inch-round-display-module,5.16,5.16
+6,1,TP4056,ESOP-8_L4.9-W3.9-P1.27-LS6.0-BL-EP-4,https://robu.in/product/1-month-warranty-1253/,0.14,0.14
+7,1,TYPE-C 16PIN 2MD(073),USB-C-SMD_TYPE-C-16PIN-2MD-073,https://www.ktron.in/product/16-pin-usb-type-c-connector-smd,0.049,0.049
+8,2,5.1k?,RES-TH_BD2.3-L6.5-P10.50-D0.5,https://jlcpcb.com/partdetail/VO-MF1_4W_1K_1_ST52/C2903245,0.01,0.02
+9,2,10k?,R0402,https://jlcpcb.com/partdetail/HKR_Hong_Kong_Resistors-RCT0510KFLF/C702829,0.01,0.02
+10,2,LED_0402-R,LED0402-RD_YELLOW,https://robu.in/product/0402-surface-mount-led-red-50pcs/,0.01,0.02
+11,3,1k?,R0603,https://jlcpcb.com/parts/componentSearch?searchTxt=PTFR0603B1K00N9,0.02,0.06
+12,3,10uF,C0603,https://jlcpcb.com/partdetail/FOJAN-FCC0603X106K100CT/C5137565,0.05,0.15
+13,3,100nF,C0603,https://jlcpcb.com/partdetail/1943-CL10B104KB8NNNC/C1591,0.05,0.15
+14,3,TS-1088-AR02016,SW-SMD_L3.9-W3.0-P4.45,https://jlcpcb.com/partdetail/XUNPU-TS_1088AR02016/C720477,0.06,0.18
+15,6,M1.4x 6mm Phillips head screw,-,https://onlyscrews.in/products/m1-4-x-6mm-phillips-round-head-laptop-and-mobile-screw-dia-1-4mm-length-6mm,0.05,0.3
+16,6,M1.2x 3mm Phillips head screw,-,https://onlyscrews.in/products/m1-2-x-3mm-phillips-round-head-laptop-screw-dia-1-2mm-length-3mm,0.05,0.3
+17,5,PCB,-,https://cart.jlcpcb.com/quote,7,7
+Total,,,,,,28.738 USD
